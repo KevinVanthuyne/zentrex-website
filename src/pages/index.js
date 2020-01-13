@@ -3,14 +3,29 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Image, Carousel, Card } from "react-bootstrap"
 
 import Layout from "../components/layout"
+import BannerImg from "../components/banner-img"
+import computerInsides from "../assets/img/computer-insides.jpg"
+import zentrexLogoWhite from "../assets/img/zentrex-logo-white.png"
+import zentrexLogoBlack from "../assets/img/zentrex-logo-black.png"
 
 export default () => (
   <Layout>
     <Row id="home">
-      <Image
-        src="https://via.placeholder.com/1920x1080&text=Landing+screen+photo"
-        fluid
-      />
+      <BannerImg
+        img={computerInsides}
+        parallax="0.2"
+        overlayColor="white"
+        overlayOpacity="0.15"
+      >
+        <Col
+          xs={{ span: 10, offset: 1 }}
+          xs={{ span: 8, offset: 2 }}
+          md={{ span: 6, offset: 3 }}
+          xl={{ span: 4, offset: 4 }}
+        >
+          <Image src={zentrexLogoWhite} fluid />
+        </Col>
+      </BannerImg>
     </Row>
     <Row id="over">
       <Col md={6}>

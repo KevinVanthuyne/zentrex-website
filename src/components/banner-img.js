@@ -1,0 +1,27 @@
+import React from "react"
+import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
+
+import styles from "./banner-img.module.css"
+
+export default props => (
+  <ParallaxProvider>
+    <ParallaxBanner
+      className={styles.banner}
+      layers={[
+        {
+          image: props.img,
+          amount: props.parallax,
+        },
+      ]}
+    >
+      <div
+        className={styles.overlay}
+        style={{
+          backgroundColor: props.overlayColor,
+          opacity: props.overlayOpacity,
+        }}
+      ></div>
+      {props.children}
+    </ParallaxBanner>
+  </ParallaxProvider>
+)
