@@ -1,3 +1,10 @@
 import React from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
 
-export default () => <div>Hello world!</div>
+import Layout from "../components/layout"
+
+export default () => (
+  <Layout>
+    <h2>Homepage</h2>
+  </Layout>
+)
