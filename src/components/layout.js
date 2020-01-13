@@ -1,9 +1,11 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 
+import Header from "./header"
+
 export default ({ children }) => (
-  <Container>
-    <h1>Zentrex</h1>
-    {children}
-  </Container>
+  <div>
+    <Header />
+    <Container fluid>{children}</Container>
+  </div>
 )
