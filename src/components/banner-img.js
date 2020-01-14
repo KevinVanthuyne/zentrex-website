@@ -13,6 +13,7 @@ export default props => (
           amount: props.parallax,
         },
       ]}
+      style={props.style}
     >
       <div
         className={styles.overlay}

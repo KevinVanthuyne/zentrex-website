@@ -1,7 +1,5 @@
 .banner {
-  height: 100vh !important;
   width: 100vw;
-  min-height: 500px;
   display: flex;
   align-items: center;
 }

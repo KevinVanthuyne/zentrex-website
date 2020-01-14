@@ -1,0 +1,55 @@
+.card {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+
+  text-decoration: none;
+}
+
+.card:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.card a:hover {
+  text-decoration: none;
+}
+
+.card-img-container {
+  text-align: center;
+}
+
+.card-img {
+  max-width: 90px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  color: #212529;
+}
+
+.card-body {
+  color: #212529;
+}
+
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.8em;
+}
+
+.card-body li {
+  display: inline;
+  margin-right: 0.12em;
+}
+
+.card-link {
+  margin-top: 1em;
+  color: rgb(196, 196, 196);
+}

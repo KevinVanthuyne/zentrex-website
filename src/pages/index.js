@@ -1,10 +1,17 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Row, Col, Image, Carousel, Card } from "react-bootstrap"
+import { Row, Col, Image } from "react-bootstrap"
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
+
+import styles from "./index.module.css"
 
 import Layout from "../components/layout"
 import BannerImg from "../components/banner-img"
+import ReviewCard from "../components/review-card"
+
 import computerInsides from "../assets/img/computer-insides.jpg"
+import circuitBoard from "../assets/img/circuit-board.jpg"
 import zentrexLogoWhite from "../assets/img/zentrex-logo-white.png"
 import zentrexLogoBlack from "../assets/img/zentrex-logo-black.png"
 
@@ -16,6 +23,7 @@ export default () => (
         parallax="0.2"
         overlayColor="white"
         overlayOpacity="0.15"
+        style={{ height: "100vh" }}
       >
         <Col
           xs={{ span: 10, offset: 1 }}
@@ -27,7 +35,7 @@ export default () => (
         </Col>
       </BannerImg>
     </Row>
-    <Row id="over" className="mt-5">
+    <Row id="over" className="mt-5 mb-5">
       <Col md={{ span: 5, offset: 1 }} xl={{ span: 4, offset: 2 }}>
         <h2 class="display-2">Over mij</h2>
       </Col>
@@ -45,41 +53,79 @@ export default () => (
       </Col>
     </Row>
     <Row>
-      <Carousel indicators="false">
-        <Carousel.Item>
-          <Card style={{ width: "18rem" }}>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Card style={{ width: "18rem" }}>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Card style={{ width: "18rem" }}>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Carousel.Item>
-      </Carousel>
+      <BannerImg
+        img={circuitBoard}
+        parallax="0.1"
+        overlayColor="white"
+        overlayOpacity="0.15"
+        style={{ height: "auto" }}
+      >
+        {/* Workaround <div> for Carousel not showing inside Bootstrap Row  */}
+        <div style={{ width: "100%" }}>
+          <Carousel
+            responsive={{
+              all: { breakpoint: { max: 4000, min: 0 }, items: 1 },
+            }}
+            className={styles.carousel}
+            showDots
+            infinite
+            autoPlay
+            autoPlaySpeed={5000}
+            renderDotsOutside
+          >
+            <Row>
+              <Col
+                xs={{ span: 8, offset: 2 }}
+                md={{ span: 6, offset: 3 }}
+                xl={{ span: 4, offset: 4 }}
+              >
+                <ReviewCard reviewer="Kato Duwee">
+                  Mijn pc was toe aan een factory recovery en aan een vervanging
+                  van mijn HDD schijf naar een SSD schijf. Mijn pc draait nu
+                  terug zoals het hoort en ik heb terug voldoende ruimte en een
+                  betere schijf. De kostprijs was goed in vergelijking met
+                  anderen. Vriendelijke service
+                </ReviewCard>
+              </Col>
+            </Row>
+            <Row>
+              <Col
+                xs={{ span: 8, offset: 2 }}
+                md={{ span: 6, offset: 3 }}
+                xl={{ span: 4, offset: 4 }}
+              >
+                <ReviewCard reviewer="Owen Van Damme">
+                  service was tijdig en correct geleverd, professioneel en
+                  vriendelijke service. Een echte aanrader!
+                </ReviewCard>
+              </Col>
+            </Row>
+            <Row>
+              <Col
+                xs={{ span: 8, offset: 2 }}
+                md={{ span: 6, offset: 3 }}
+                xl={{ span: 4, offset: 4 }}
+              >
+                <ReviewCard reviewer="Kevin Vanthuyne">
+                  Super snelle service, vriendelijk en een eerlijke/lage prijs!
+                </ReviewCard>
+              </Col>
+            </Row>
+            <Row>
+              <Col
+                xs={{ span: 8, offset: 2 }}
+                md={{ span: 6, offset: 3 }}
+                xl={{ span: 4, offset: 4 }}
+              >
+                <ReviewCard reviewer="Jan-Karel">
+                  Uitstekende service voor een zeer schappelijke prijs, komt
+                  zijn beloftes na. Aanrader!
+                </ReviewCard>
+              </Col>
+            </Row>
+          </Carousel>
+        </div>
+      </BannerImg>
     </Row>
     <Row id="diensten">
       <Col md={6}>
