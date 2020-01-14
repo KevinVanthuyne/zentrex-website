@@ -19,7 +19,7 @@ export default () => (
       >
         <Col
           xs={{ span: 10, offset: 1 }}
-          xs={{ span: 8, offset: 2 }}
+          sm={{ span: 8, offset: 2 }}
           md={{ span: 6, offset: 3 }}
           xl={{ span: 4, offset: 4 }}
         >
@@ -27,25 +27,21 @@ export default () => (
         </Col>
       </BannerImg>
     </Row>
-    <Row id="over">
-      <Col md={6}>
-        <h2>Over Mij</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          feugiat cursus nibh, in malesuada nisl cursus ut. Curabitur ac lacus
-          eget neque aliquet cursus vitae vel tortor. Sed semper, sapien quis
-          condimentum tempor, nisl nulla porttitor neque, vitae pellentesque
-          risus mi ut arcu.
-        </p>
-        <p>
-          Sed vel purus a orci sodales porta ut ac neque. Aliquam ut tincidunt
-          ligula. Pellentesque scelerisque blandit lectus id euismod. Fusce nec
-          leo non nunc euismod congue et id enim. Sed purus velit, ultricies vel
-          nisl vitae, volutpat vulputate libero.
-        </p>
+    <Row id="over" className="mt-5">
+      <Col md={{ span: 5, offset: 1 }} xl={{ span: 4, offset: 2 }}>
+        <h2 class="display-2">Over mij</h2>
       </Col>
-      <Col md={6}>
-        <Image src="https://via.placeholder.com/500x400" fluid />
+      <Col md={5} xl={4}>
+        <p>
+          Hallo, ik ben Dennis Vanthuyne, een gemotiveerde student-ondernemer
+          aan de HoGent die graag een verschil wil maken. Danzij mijn ervaring
+          van al meer dan 5 jaar is dit ook zeker mogelijk! Computers, laptops,
+          smartphones en tablets hebben weinig geheimen voor mij.
+        </p>
+        <p>
+          Ik heb een passie voor ondernemen en IT. Dit heb ik kunnen combineren
+          en daar is Zentrex het resultaat van!
+        </p>
       </Col>
     </Row>
     <Row>
