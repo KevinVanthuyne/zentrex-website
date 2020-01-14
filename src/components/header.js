@@ -1,13 +1,15 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 
+import styles from "./header.module.css"
+
 export default () => (
   <header>
-    <Navbar bg="light" expand="md" fixed="top">
-      <Navbar.Brand>Zentrex</Navbar.Brand>
+    <Navbar variant="dark" expand="md" fixed="top" className={styles.navbar}>
+      {/* <Navbar.Brand>Zentrex</Navbar.Brand> */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
+        <Nav className={styles.nav}>
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#over">Over Mij</Nav.Link>
           <Nav.Link href="#diensten">Diensten</Nav.Link>
