@@ -6,7 +6,7 @@ import styles from "./banner-img.module.css"
 export default props => (
   <ParallaxProvider>
     <ParallaxBanner
-      className={styles.banner}
+      className={(styles.banner, props.className)}
       layers={[
         {
           image: props.img,

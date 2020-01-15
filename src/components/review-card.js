@@ -12,6 +12,7 @@ export default props => (
     <a
       href="https://search.google.com/local/reviews?placeid=ChIJK-UkaPeVw0cRbM4NQXF_HCE"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <Row>
         <Col md={3} lg={2} className={styles.cardImgContainer}>

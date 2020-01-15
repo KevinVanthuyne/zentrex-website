@@ -3,6 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Image } from "react-bootstrap"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
+import { FaArrowDown } from "react-icons/fa"
+import styled, { keyframes } from "styled-components"
+import { fadeInDown, fadeIn } from "react-animations"
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 import styles from "./index.module.css"
 
@@ -15,29 +20,55 @@ import circuitBoard from "../assets/img/circuit-board.jpg"
 import zentrexLogoWhite from "../assets/img/zentrex-logo-white.png"
 import zentrexLogoBlack from "../assets/img/zentrex-logo-black.png"
 
+const fadeInDownAnimation = keyframes`${fadeInDown}`
+const fadeInAnimation = keyframes`${fadeIn}`
+
+const FadeInDownDiv = styled.div`
+  animation: 2s ${fadeInDownAnimation} 1;
+`
+const FadeInDiv = styled.div`
+  animation: 4s ${fadeInAnimation} 1;
+`
+
 export default () => (
   <Layout>
     <Row id="home">
       <BannerImg
         img={computerInsides}
-        parallax="0.2"
+        parallax={0.2}
         overlayColor="white"
-        overlayOpacity="0.15"
-        style={{ height: "100vh" }}
+        overlayOpacity={0.15}
+        className={styles.landingScreenBanner}
       >
         <Col
           xs={{ span: 10, offset: 1 }}
           sm={{ span: 8, offset: 2 }}
           md={{ span: 6, offset: 3 }}
           xl={{ span: 4, offset: 4 }}
+          className={styles.landingScreenColumn}
         >
           <Image src={zentrexLogoWhite} fluid />
+          <div className={styles.scrollDown}>
+            <ScrollAnimation
+              animateIn="fadeOut"
+              initiallyVisible
+              offset={Math.floor(window.innerHeight * 0.1)}
+              animateOnce
+            >
+              <FadeInDownDiv>
+                <FaArrowDown />
+              </FadeInDownDiv>
+              <FadeInDiv>
+                <p>scroll</p>
+              </FadeInDiv>
+            </ScrollAnimation>
+          </div>
         </Col>
       </BannerImg>
     </Row>
     <Row id="over" className="mt-5 mb-5">
       <Col md={{ span: 5, offset: 1 }} xl={{ span: 4, offset: 2 }}>
-        <h2 class="display-2">Over mij</h2>
+        <h2 className="display-2">Over mij</h2>
       </Col>
       <Col md={5} xl={4}>
         <p>
@@ -55,9 +86,9 @@ export default () => (
     <Row>
       <BannerImg
         img={circuitBoard}
-        parallax="0.1"
+        parallax={0.1}
         overlayColor="white"
-        overlayOpacity="0.15"
+        overlayOpacity={0.15}
         style={{ height: "auto" }}
       >
         {/* Workaround <div> for Carousel not showing inside Bootstrap Row  */}
