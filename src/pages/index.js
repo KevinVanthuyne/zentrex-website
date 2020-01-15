@@ -79,7 +79,7 @@ export default () => (
         </p>
         <Row className="mt-5 mb-5">
           <Col>
-            <h3>Herstellingen</h3>
+            <h3 className="big-subtitle">Herstellingen</h3>
             <ul className="nice-list">
               <li>Smartphones, tablets, laptops, computers, ...</li>
               <li>Hardware &amp; software problemen</li>
@@ -89,7 +89,7 @@ export default () => (
             </ul>
           </Col>
           <Col>
-            <h3>Computers op maat</h3>
+            <h3 className="big-subtitle">Computers op maat</h3>
             <ul className="nice-list">
               <li>Specifieke eisen voor computer</li>
               <li>Niet zeker wat te kopen</li>
@@ -178,19 +178,23 @@ export default () => (
     </Row>
 
     <Row id="over" className="mt-5 mb-5">
-      <Col md={{ span: 5, offset: 1 }} xl={{ span: 4, offset: 2 }}>
-        <h2 className="display-2">Over mij</h2>
+      <Col md={{ span: 3, offset: 1 }}>
+        <h2 className="big-title">Over mij</h2>
       </Col>
-      <Col md={5} xl={4}>
-        <p>
+      <Col md={4}>
+        <h3 className="big-subtitle">Persoon</h3>
+        <p className="big-text">
           Ik ben Dennis Vanthuyne, een gemotiveerde student-ondernemer aan de
-          HoGent die graag een verschil wil maken. Danzij meer dan 5 jaar
-          ervaring is dit dan ook zeker mogelijk! Computers, laptops,
-          smartphones en tablets hebben weinig geheimen voor mij.
+          HoGent met meer dan 5 jaar ervaring in herstellingen en IT. <br />
+          Computers, laptops, smartphones en tablets hebben weinig geheimen meer
+          voor mij.
         </p>
-        <p>
-          Ik heb een passie voor ondernemen en IT. Dit heb ik kunnen combineren
-          en daar is Zentrex het resultaat van!
+      </Col>
+      <Col md={3}>
+        <h3 className="big-subtitle">Visie</h3>
+        <p className="big-text">
+          Het verschil maken in IT diensten. Ik heb een passie voor ondernemen
+          en IT en daar is Zentrex het resultaat van!
         </p>
       </Col>
     </Row>
