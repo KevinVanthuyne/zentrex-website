@@ -3,7 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { Row, Col, Image } from "react-bootstrap"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-import { FaArrowDown } from "react-icons/fa"
+import {
+  FaArrowDown,
+  FaHome,
+  FaCoins,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa"
 import styled, { keyframes } from "styled-components"
 import { fadeInDown, fadeIn } from "react-animations"
 import ScrollAnimation from "react-animate-on-scroll"
@@ -199,14 +205,46 @@ export default () => (
       </Col>
     </Row>
 
-    <Row id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Sint-Huybrechtstraat 131</li>
-        <li>1785 Merchtem</li>
-        <li>België</li>
-        <li>BE 0724 618 308</li>
-      </ul>
+    <Row id="contact" className={styles.contactSection}>
+      <div className={styles.contactSectionBg}></div>
+      <Col md={{ span: 5, offset: 1 }}>
+        <h2 className="big-title mb-5">Contact</h2>
+        <ul className="nice-list big-text">
+          <li>
+            <span className={styles.icon}>
+              <FaHome />
+            </span>
+            Sint-Huybrechtstraat 131 1785 Merchtem
+          </li>
+          <li>
+            <span className={styles.icon}>
+              <FaCoins />
+            </span>
+            BE 0724 618 308
+          </li>
+          <li>
+            <span className={styles.icon}>
+              <FaPhone />
+            </span>
+            +32 496 83 30 67
+          </li>
+          <li>
+            <span className={styles.icon}>
+              <FaEnvelope />
+            </span>
+            info@zentrex.be
+          </li>
+        </ul>
+      </Col>
+      <Col md={5}>
+        <iframe
+          width="100%"
+          height="100%"
+          frameborder="0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAQuv8z-ppn6XQvUK8IcUe4mVJgkUpxTzc&q=Zentrex+Merchtem"
+          allowfullscreen
+        ></iframe>
+      </Col>
     </Row>
   </Layout>
 )

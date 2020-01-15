@@ -28,3 +28,19 @@
 .carousel {
   padding: 5rem 0;
 }
+
+.contact-section {
+  padding: 10rem 0 5rem;
+  background-image: linear-gradient(rgb(233, 0, 0), rgb(146, 0, 0));
+  clip-path: polygon(
+    0 20%,
+    100% 0,
+    100% 100%,
+    0 100%
+  ); /* left top, right top, right bottom, left bottom */
+  color: white;
+}
+
+.icon {
+  margin-right: 1em;
+}
