@@ -16,9 +16,10 @@ import BannerImg from "../components/banner-img"
 import ReviewCard from "../components/review-card"
 
 import computerInsides from "../assets/img/computer-insides.jpg"
-import circuitBoard from "../assets/img/circuit-board.jpg"
 import zentrexLogoWhite from "../assets/img/zentrex-logo-white.png"
 import zentrexLogoBlack from "../assets/img/zentrex-logo-black.png"
+import circuitBoard from "../assets/img/circuit-board.jpg"
+import phoneRepair from "../assets/img/broken-phone.jpg"
 
 const fadeInDownAnimation = keyframes`${fadeInDown}`
 const fadeInAnimation = keyframes`${fadeIn}`
@@ -29,7 +30,6 @@ const FadeInDownDiv = styled.div`
 const FadeInDiv = styled.div`
   animation: 4s ${fadeInAnimation} 1;
 `
-
 export default () => (
   <Layout>
     <Row id="home">
@@ -66,24 +66,42 @@ export default () => (
         </Col>
       </BannerImg>
     </Row>
-    <Row id="over" className="mt-5 mb-5">
-      <Col md={{ span: 5, offset: 1 }} xl={{ span: 4, offset: 2 }}>
-        <h2 className="display-2">Over mij</h2>
+
+    <Row id="diensten" className="mt-5">
+      <Col md={{ span: 5, offset: 1 }}>
+        <Image src={phoneRepair} fluid />
       </Col>
-      <Col md={5} xl={4}>
-        <p>
-          Hallo, ik ben Dennis Vanthuyne, een gemotiveerde student-ondernemer
-          aan de HoGent die graag een verschil wil maken. Danzij mijn ervaring
-          van al meer dan 5 jaar is dit ook zeker mogelijk! Computers, laptops,
-          smartphones en tablets hebben weinig geheimen voor mij.
+      <Col md={5}>
+        <h2 className="big-title">Diensten</h2>
+        <p className="big-text">
+          Voor bijna alle IT-gerelateerde zaken kan u bij Zentrex terecht.
+          Klanttevredenheid en kwaliteit staan centraal.
         </p>
-        <p>
-          Ik heb een passie voor ondernemen en IT. Dit heb ik kunnen combineren
-          en daar is Zentrex het resultaat van!
-        </p>
+        <Row className="mt-5 mb-5">
+          <Col>
+            <h3>Herstellingen</h3>
+            <ul className="nice-list">
+              <li>Smartphones, tablets, laptops, computers, ...</li>
+              <li>Hardware &amp; software problemen</li>
+              <li>In perfecte staat afgeleverd</li>
+              <li>Tot binnen 1 uur hersteld</li>
+              <li>Tot 24 maand garantie</li>
+            </ul>
+          </Col>
+          <Col>
+            <h3>Computers op maat</h3>
+            <ul className="nice-list">
+              <li>Specifieke eisen voor computer</li>
+              <li>Niet zeker wat te kopen</li>
+              <li>Fanatieke gamer tot kantoorgebruik</li>
+              <li>Op maat samengesteld</li>
+            </ul>
+          </Col>
+        </Row>
       </Col>
     </Row>
-    <Row>
+
+    <Row id="reviews">
       <BannerImg
         img={circuitBoard}
         parallax={0.1}
@@ -158,29 +176,25 @@ export default () => (
         </div>
       </BannerImg>
     </Row>
-    <Row id="diensten">
-      <Col md={6}>
-        <Image src="https://via.placeholder.com/500x400" fluid />
+
+    <Row id="over" className="mt-5 mb-5">
+      <Col md={{ span: 5, offset: 1 }} xl={{ span: 4, offset: 2 }}>
+        <h2 className="display-2">Over mij</h2>
       </Col>
-      <Col md={6}>
-        <h2>Diensten</h2>
-        <h3>Herstellingen</h3>
+      <Col md={5} xl={4}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          feugiat cursus nibh, in malesuada nisl cursus ut. Curabitur ac lacus
-          eget neque aliquet cursus vitae vel tortor. Sed semper, sapien quis
-          condimentum tempor, nisl nulla porttitor neque, vitae pellentesque
-          risus mi ut arcu.
+          Ik ben Dennis Vanthuyne, een gemotiveerde student-ondernemer aan de
+          HoGent die graag een verschil wil maken. Danzij meer dan 5 jaar
+          ervaring is dit dan ook zeker mogelijk! Computers, laptops,
+          smartphones en tablets hebben weinig geheimen voor mij.
         </p>
-        <h3>Computers op maat</h3>
         <p>
-          Sed vel purus a orci sodales porta ut ac neque. Aliquam ut tincidunt
-          ligula. Pellentesque scelerisque blandit lectus id euismod. Fusce nec
-          leo non nunc euismod congue et id enim. Sed purus velit, ultricies vel
-          nisl vitae, volutpat vulputate libero.
+          Ik heb een passie voor ondernemen en IT. Dit heb ik kunnen combineren
+          en daar is Zentrex het resultaat van!
         </p>
       </Col>
     </Row>
+
     <Row id="contact">
       <h2>Contact</h2>
       <ul>
