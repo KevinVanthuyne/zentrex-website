@@ -31,10 +31,10 @@ const fadeInDownAnimation = keyframes`${fadeInDown}`
 const fadeInAnimation = keyframes`${fadeIn}`
 
 const FadeInDownDiv = styled.div`
-  animation: 2s ${fadeInDownAnimation} 1;
+  animation: 4s ${fadeInDownAnimation} infinite;
 `
 const FadeInDiv = styled.div`
-  animation: 4s ${fadeInAnimation} 1;
+  animation: 6s ${fadeInAnimation} 1;
 `
 export default () => (
   <Layout>
