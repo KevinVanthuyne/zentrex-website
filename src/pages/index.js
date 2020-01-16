@@ -74,7 +74,7 @@ export default () => (
       </BannerImg>
     </Row>
 
-    <Row id="diensten" className="mt-5">
+    <Row id="diensten" className="pt-10 pb-7">
       <Col md={{ span: 5, offset: 1 }}>
         <Image src={phoneRepair} fluid />
       </Col>
@@ -184,7 +184,7 @@ export default () => (
       </BannerImg>
     </Row>
 
-    <Row id="over" className="mt-5 mb-5">
+    <Row id="over" className="pt-10 pb-7">
       <Col md={{ span: 3, offset: 1 }}>
         <h2 className="big-title">Over mij</h2>
       </Col>
@@ -206,7 +206,7 @@ export default () => (
       </Col>
     </Row>
 
-    <Row id="contact" className={styles.contactSection}>
+    <Row id="contact" className={`${styles.contactSection} pt-15 pb-8`}>
       <div className={styles.contactSectionBg}></div>
       <Col md={{ span: 5, offset: 1 }}>
         <h2 className="big-title mb-5">Contact</h2>
