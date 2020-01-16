@@ -219,12 +219,6 @@ export default () => (
           </li>
           <li>
             <span className={styles.icon}>
-              <FaCoins />
-            </span>
-            BE 0724 618 308
-          </li>
-          <li>
-            <span className={styles.icon}>
               <FaPhone />
             </span>
             +32 496 83 30 67

@@ -1,0 +1,48 @@
+@import "../styles/variables.scss";
+
+.footer {
+  color: $black;
+
+  .footerRow {
+    background-color: $brown;
+    display: flex;
+    align-items: center;
+  }
+
+  .footerRow:first-of-type {
+    padding-top: 2rem;
+  }
+
+  .footerRow:last-of-type {
+    padding-bottom: 2rem;
+  }
+
+  .footer-icons {
+    font-size: 2rem;
+
+    a {
+      color: $black;
+      margin-right: 1em;
+    }
+
+    a:hover {
+      color: $white-transparant;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    margin-top: 1.5rem;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline;
+      margin-right: 3rem;
+    }
+  }
+}
