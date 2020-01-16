@@ -238,10 +238,10 @@ export default () => (
       </Col>
       <Col md={5}>
         <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.005375163039!2d4.209476816304175!3d50.979091257012435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c395f76824e52b%3A0x211c7f71410dce6c!2sZentrex!5e0!3m2!1snl!2sbe!4v1579169861160!5m2!1snl!2sbe"
           width="100%"
           height="100%"
           frameborder="0"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAQuv8z-ppn6XQvUK8IcUe4mVJgkUpxTzc&q=Zentrex+Merchtem"
           allowfullscreen
         ></iframe>
       </Col>
