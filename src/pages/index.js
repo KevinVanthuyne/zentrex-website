@@ -11,7 +11,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa"
 import styled, { keyframes } from "styled-components"
-import { fadeInDown, fadeIn } from "react-animations"
+import { fadeInDown, fadeIn, fadeInUp } from "react-animations"
 import ScrollAnimation from "react-animate-on-scroll"
 import "animate.css/animate.min.css"
 
@@ -30,12 +30,16 @@ import phoneRepair from "../assets/img/broken-phone.jpg"
 
 const fadeInDownAnimation = keyframes`${fadeInDown}`
 const fadeInAnimation = keyframes`${fadeIn}`
+const fadeInUpAnimation = keyframes`${fadeInUp}`
 
 const FadeInDownDiv = styled.div`
   animation: 4s ${fadeInDownAnimation} infinite;
 `
 const FadeInDiv = styled.div`
   animation: 6s ${fadeInAnimation} 1;
+`
+const FadeInUpDiv = styled.div`
+  animation: 2s ${fadeInUpAnimation} 1;
 `
 export default () => (
   <Layout>
@@ -54,7 +58,9 @@ export default () => (
           xl={{ span: 4, offset: 4 }}
           className={styles.landingScreenColumn}
         >
-          <Image src={zentrexLogoWhite} fluid />
+          <FadeInUpDiv>
+            <Image src={zentrexLogoWhite} fluid />
+          </FadeInUpDiv>
           <div className={styles.scrollDown}>
             <ScrollAnimation
               animateIn="fadeOut"
@@ -76,33 +82,57 @@ export default () => (
 
     <Row id="diensten" className="pt-10 pb-7">
       <Col md={{ span: 5, offset: 1 }}>
-        <Image src={phoneRepair} fluid />
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOnce
+          offset={Math.floor(window.innerHeight * 0.1)}
+        >
+          <Image src={phoneRepair} fluid />
+        </ScrollAnimation>
       </Col>
       <Col md={5}>
-        <h2 className="big-title">Diensten</h2>
-        <p className="big-text">
-          Voor bijna alle IT-gerelateerde zaken kan u bij Zentrex terecht.
-          Klanttevredenheid en kwaliteit staan centraal.
-        </p>
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOnce
+          offset={Math.floor(window.innerHeight * 0.1)}
+        >
+          <h2 className="big-title">Diensten</h2>
+          <p className="big-text">
+            Voor bijna alle IT-gerelateerde zaken kan u bij Zentrex terecht.
+            Klanttevredenheid en kwaliteit staan centraal.
+          </p>
+        </ScrollAnimation>
         <Row className="mt-5 mb-5">
           <Col>
-            <h3 className="big-subtitle">Herstellingen</h3>
-            <ul className="nice-list">
-              <li>Smartphones, tablets, laptops, computers, ...</li>
-              <li>Hardware &amp; software problemen</li>
-              <li>In perfecte staat afgeleverd</li>
-              <li>Tot binnen 1 uur hersteld</li>
-              <li>Tot 24 maand garantie</li>
-            </ul>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              animateOnce
+              offset={Math.floor(window.innerHeight * 0.1)}
+            >
+              <h3 className="big-subtitle">Herstellingen</h3>
+              <ul className="nice-list">
+                <li>Smartphones, tablets, laptops, computers, ...</li>
+                <li>Hardware &amp; software problemen</li>
+                <li>In perfecte staat afgeleverd</li>
+                <li>Tot binnen 1 uur hersteld</li>
+                <li>Tot 24 maand garantie</li>
+              </ul>
+            </ScrollAnimation>
           </Col>
           <Col>
-            <h3 className="big-subtitle">Computers op maat</h3>
-            <ul className="nice-list">
-              <li>Specifieke eisen voor computer</li>
-              <li>Niet zeker wat te kopen</li>
-              <li>Fanatieke gamer tot kantoorgebruik</li>
-              <li>Op maat samengesteld</li>
-            </ul>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              animateOnce
+              offset={Math.floor(window.innerHeight * 0.1)}
+            >
+              <h3 className="big-subtitle">Computers op maat</h3>
+              <ul className="nice-list">
+                <li>Specifieke eisen voor computer</li>
+                <li>Niet zeker wat te kopen</li>
+                <li>Fanatieke gamer tot kantoorgebruik</li>
+                <li>Op maat samengesteld</li>
+              </ul>
+            </ScrollAnimation>
           </Col>
         </Row>
       </Col>
@@ -184,52 +214,63 @@ export default () => (
       </BannerImg>
     </Row>
 
-    <Row id="over" className="pt-10 pb-7">
-      <Col md={{ span: 3, offset: 1 }}>
-        <h2 className="big-title">Over mij</h2>
-      </Col>
-      <Col md={4}>
-        <h3 className="big-subtitle">Persoon</h3>
-        <p className="big-text">
-          Ik ben Dennis Vanthuyne, een gemotiveerde student-ondernemer aan de
-          HoGent met meer dan 5 jaar ervaring in herstellingen en IT. <br />
-          Computers, laptops, smartphones en tablets hebben weinig geheimen meer
-          voor mij.
-        </p>
-      </Col>
-      <Col md={3}>
-        <h3 className="big-subtitle">Visie</h3>
-        <p className="big-text">
-          Het verschil maken in IT diensten. Ik heb een passie voor ondernemen
-          en IT en daar is Zentrex het resultaat van!
-        </p>
-      </Col>
-    </Row>
+    <ScrollAnimation
+      animateIn="fadeInUp"
+      animateOnce
+      offset={Math.floor(window.innerHeight * 0.1)}
+    >
+      <Row id="over" className="pt-10 pb-7">
+        <Col md={{ span: 3, offset: 1 }}>
+          <h2 className="big-title">Over mij</h2>
+        </Col>
+        <Col md={4}>
+          <h3 className="big-subtitle">Persoon</h3>
+          <p className="big-text">
+            Ik ben Dennis Vanthuyne, een gemotiveerde student-ondernemer aan de
+            HoGent met meer dan 5 jaar ervaring in herstellingen en IT. <br />
+            Computers, laptops, smartphones en tablets hebben weinig geheimen
+            meer voor mij.
+          </p>
+        </Col>
+        <Col md={3}>
+          <h3 className="big-subtitle">Visie</h3>
+          <p className="big-text">
+            Het verschil maken in IT diensten. Ik heb een passie voor ondernemen
+            en IT en daar is Zentrex het resultaat van!
+          </p>
+        </Col>
+      </Row>
+    </ScrollAnimation>
 
     <Row id="contact" className={`${styles.contactSection} pt-15 pb-8`}>
-      <div className={styles.contactSectionBg}></div>
       <Col md={{ span: 5, offset: 1 }}>
-        <h2 className="big-title mb-5">Contact</h2>
-        <ul className="nice-list big-text">
-          <li>
-            <span className={styles.icon}>
-              <FaHome />
-            </span>
-            Sint-Huybrechtstraat 131 1785 Merchtem
-          </li>
-          <li>
-            <span className={styles.icon}>
-              <FaPhone />
-            </span>
-            +32 496 83 30 67
-          </li>
-          <li>
-            <span className={styles.icon}>
-              <FaEnvelope />
-            </span>
-            info@zentrex.be
-          </li>
-        </ul>
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOnce
+          offset={Math.floor(window.innerHeight * 0.1)}
+        >
+          <h2 className="big-title mb-5">Contact</h2>
+          <ul className="nice-list big-text">
+            <li>
+              <span className={styles.icon}>
+                <FaHome />
+              </span>
+              Sint-Huybrechtstraat 131 1785 Merchtem
+            </li>
+            <li>
+              <span className={styles.icon}>
+                <FaPhone />
+              </span>
+              +32 496 83 30 67
+            </li>
+            <li>
+              <span className={styles.icon}>
+                <FaEnvelope />
+              </span>
+              info@zentrex.be
+            </li>
+          </ul>
+        </ScrollAnimation>
       </Col>
       <Col md={5}>
         <iframe
@@ -241,6 +282,7 @@ export default () => (
         ></iframe>
       </Col>
     </Row>
+
     <Footer />
   </Layout>
 )
