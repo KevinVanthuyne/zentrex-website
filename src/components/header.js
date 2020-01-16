@@ -11,8 +11,8 @@ export default () => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={styles.nav}>
           <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#over">Over Mij</Nav.Link>
           <Nav.Link href="#diensten">Diensten</Nav.Link>
+          <Nav.Link href="#over">Over Mij</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
