@@ -43,6 +43,9 @@ const FadeInDiv = styled.div`
 const FadeInUpDiv = styled.div`
   animation: 2s ${fadeInUpAnimation} 1;
 `
+
+const windowHeight = typeof window !== `undefined` ? window.innerHeight : 0
+
 export default () => (
   <Layout>
     <Row id="home">
@@ -67,7 +70,7 @@ export default () => (
             <ScrollAnimation
               animateIn="fadeOut"
               initiallyVisible
-              offset={Math.floor(window.innerHeight * 0.1)}
+              offset={Math.floor(windowHeight * 0.1)}
               animateOnce
             >
               <FadeInDownDiv>
@@ -87,7 +90,7 @@ export default () => (
         <ScrollAnimation
           animateIn="fadeInUp"
           animateOnce
-          offset={Math.floor(window.innerHeight * 0.1)}
+          offset={Math.floor(windowHeight * 0.1)}
         >
           <Image src={phoneRepair} fluid />
         </ScrollAnimation>
@@ -96,7 +99,7 @@ export default () => (
         <ScrollAnimation
           animateIn="fadeInUp"
           animateOnce
-          offset={Math.floor(window.innerHeight * 0.1)}
+          offset={Math.floor(windowHeight * 0.1)}
         >
           <h2 className="big-title">Diensten</h2>
           <p className="big-text">
@@ -109,7 +112,7 @@ export default () => (
             <ScrollAnimation
               animateIn="fadeInUp"
               animateOnce
-              offset={Math.floor(window.innerHeight * 0.1)}
+              offset={Math.floor(windowHeight * 0.1)}
             >
               <h3 className="big-subtitle">Herstellingen</h3>
               <ul className="nice-list">
@@ -125,7 +128,7 @@ export default () => (
             <ScrollAnimation
               animateIn="fadeInUp"
               animateOnce
-              offset={Math.floor(window.innerHeight * 0.1)}
+              offset={Math.floor(windowHeight * 0.1)}
             >
               <h3 className="big-subtitle">Computers op maat</h3>
               <ul className="nice-list">
@@ -219,7 +222,7 @@ export default () => (
     <ScrollAnimation
       animateIn="fadeInUp"
       animateOnce
-      offset={Math.floor(window.innerHeight * 0.1)}
+      offset={Math.floor(windowHeight * 0.1)}
     >
       <Row id="over" className="pt-10 pb-7">
         <Col lg={{ span: 6, offset: 1 }}>
@@ -254,7 +257,7 @@ export default () => (
         <ScrollAnimation
           animateIn="fadeInUp"
           animateOnce
-          offset={Math.floor(window.innerHeight * 0.1)}
+          offset={Math.floor(windowHeight * 0.1)}
         >
           <h2 className="big-title mb-5">Contact</h2>
           <ul className="nice-list big-text">
