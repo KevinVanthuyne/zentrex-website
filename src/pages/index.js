@@ -27,6 +27,8 @@ import zentrexLogoWhite from "../assets/img/zentrex-logo-white.png"
 import zentrexLogoBlack from "../assets/img/zentrex-logo-black.png"
 import circuitBoard from "../assets/img/circuit-board.jpg"
 import phoneRepair from "../assets/img/broken-phone.jpg"
+import repairing from "../assets/img/repairing.jpg"
+import quotemark from "../assets/img/quotemark.svg"
 
 const fadeInDownAnimation = keyframes`${fadeInDown}`
 const fadeInAnimation = keyframes`${fadeIn}`
@@ -102,7 +104,7 @@ export default () => (
             Klanttevredenheid en kwaliteit staan centraal.
           </p>
         </ScrollAnimation>
-        <Row className="mt-5 mb-5">
+        <Row className="mt-4rem mb-5">
           <Col>
             <ScrollAnimation
               animateIn="fadeInUp"
@@ -220,24 +222,29 @@ export default () => (
       offset={Math.floor(window.innerHeight * 0.1)}
     >
       <Row id="over" className="pt-10 pb-7">
-        <Col md={{ span: 3, offset: 1 }}>
+        <Col lg={{ span: 6, offset: 1 }}>
           <h2 className="big-title">Over mij</h2>
-        </Col>
-        <Col md={4}>
-          <h3 className="big-subtitle">Persoon</h3>
           <p className="big-text">
             Ik ben Dennis Vanthuyne, een gemotiveerde student-ondernemer aan de
-            HoGent met meer dan 5 jaar ervaring in herstellingen en IT. <br />
+            HoGent met meer dan 5 jaar ervaring in herstellingen en IT.
+          </p>
+          <p className="big-text">
             Computers, laptops, smartphones en tablets hebben weinig geheimen
             meer voor mij.
           </p>
         </Col>
-        <Col md={3}>
-          <h3 className="big-subtitle">Visie</h3>
-          <p className="big-text">
-            Het verschil maken in IT diensten. Ik heb een passie voor ondernemen
-            en IT en daar is Zentrex het resultaat van!
-          </p>
+        <Col lg={{ span: 3, offset: 1 }}>
+          {/* <Image src={repairing} fluid className={styles.aboutImg} />
+          <h3 className="big-subtitle">Visie</h3> */}
+          <div className="quote">
+            <img src={quotemark} className="open-mark" />
+            <p>Ik wil het verschil maken in IT diensten.</p>
+            <p>
+              Ik heb een passie voor ondernemen en IT en daar is Zentrex het
+              resultaat van!
+            </p>
+            <img src={quotemark} className="close-mark" />
+          </div>
         </Col>
       </Row>
     </ScrollAnimation>
