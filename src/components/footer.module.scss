@@ -1,7 +1,7 @@
 @import "../styles/variables.scss";
 
 .footer {
-  color: $black;
+  color: $dark-brown;
 
   .footerRow {
     background-color: $brown;
@@ -21,12 +21,12 @@
     font-size: 2rem;
 
     a {
-      color: $black;
+      color: $dark-brown;
       margin-right: 1em;
     }
 
     a:hover {
-      color: $white-transparant;
+      color: $dark-red;
     }
   }
 
