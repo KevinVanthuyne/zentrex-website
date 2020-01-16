@@ -3,7 +3,7 @@ import { IconContext } from "react-icons"
 import { FaStar, FaAngleRight } from "react-icons/fa"
 import { Row, Col, Image } from "react-bootstrap"
 
-import styles from "./review-card.module.css"
+import styles from "./review-card.module.scss"
 
 import userIcon from "../assets/img/user.svg"
 

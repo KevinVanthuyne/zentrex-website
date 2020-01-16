@@ -1,12 +1,13 @@
+@import "../styles/variables.scss";
+
 .card {
   width: 100%;
   margin: 0 auto;
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 0px $black-transparant;
   background-color: white;
   padding: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid $very-light-gray;
   border-radius: 5px;
-
   text-decoration: none;
 }
 
@@ -31,11 +32,10 @@
   font-weight: bold;
   font-size: 1.1em;
   margin-bottom: 0.5em;
-  color: #212529;
 }
 
 .card-body {
-  color: #212529;
+  color: $near-black;
 }
 
 .card-body ul {
@@ -51,5 +51,5 @@
 
 .card-link {
   margin-top: 1em;
-  color: rgb(196, 196, 196);
+  color: $very-light-gray;
 }

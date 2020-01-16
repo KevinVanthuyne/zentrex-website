@@ -1,7 +1,7 @@
 import React from "react"
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
 
-import styles from "./banner-img.module.css"
+import styles from "./banner-img.module.scss"
 
 export default props => (
   <ParallaxProvider>

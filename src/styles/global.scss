@@ -1,5 +1,11 @@
+@import "../styles/variables.scss";
+
 html {
   background-color: white !important;
+}
+
+body {
+  color: $near-black !important;
 }
 
 h3 {

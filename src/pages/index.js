@@ -15,11 +15,12 @@ import { fadeInDown, fadeIn } from "react-animations"
 import ScrollAnimation from "react-animate-on-scroll"
 import "animate.css/animate.min.css"
 
-import styles from "./index.module.css"
+import styles from "./index.module.scss"
 
 import Layout from "../components/layout"
 import BannerImg from "../components/banner-img"
 import ReviewCard from "../components/review-card"
+import Footer from "../components/footer"
 
 import computerInsides from "../assets/img/computer-insides.jpg"
 import zentrexLogoWhite from "../assets/img/zentrex-logo-white.png"
@@ -246,5 +247,6 @@ export default () => (
         ></iframe>
       </Col>
     </Row>
+    <Footer />
   </Layout>
 )

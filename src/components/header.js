@@ -1,7 +1,7 @@
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 
-import styles from "./header.module.css"
+import styles from "./header.module.scss"
 
 export default () => (
   <header>

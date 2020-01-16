@@ -1,3 +1,5 @@
+@import "../styles/variables.scss";
+
 .landing-screen-banner {
   height: 100vh !important;
 }
@@ -13,7 +15,7 @@
 .scroll-down {
   position: absolute;
   bottom: 0;
-  color: rgba(255, 255, 255, 0.7);
+  color: $white-transparant;
   text-align: center;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -31,7 +33,7 @@
 
 .contact-section {
   padding: 10rem 0 5rem;
-  background-image: linear-gradient(rgb(233, 0, 0), rgb(146, 0, 0));
+  background-image: linear-gradient($red, $dark-red);
   clip-path: polygon(
     0 20%,
     100% 0,
