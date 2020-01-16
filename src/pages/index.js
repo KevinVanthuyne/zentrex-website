@@ -141,7 +141,7 @@ export default () => (
     <Row id="reviews">
       <BannerImg
         img={circuitBoard}
-        parallax={0.1}
+        parallax={0.2}
         overlayColor="white"
         overlayOpacity={0.15}
         style={{ height: "auto" }}
