@@ -1,0 +1,35 @@
+@import "../styles/variables.scss";
+
+@keyframes strike {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+a {
+  color: $red;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $red;
+}
+
+a:hover::after {
+  content: " ";
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: $red;
+  animation-name: strike;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
