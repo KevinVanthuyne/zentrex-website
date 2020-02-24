@@ -31,6 +31,7 @@ import zentrexLogoBlack from "../assets/img/zentrex-logo-black.png"
 import circuitBoard from "../assets/img/circuit-board.jpg"
 import phoneRepair from "../assets/img/broken-phone.jpg"
 import repairing from "../assets/img/repairing.jpg"
+import dennis from "../assets/img/dennis.jpg"
 import quotemark from "../assets/img/quotemark.svg"
 
 const fadeInDownAnimation = keyframes`${fadeInDown}`
@@ -281,17 +282,20 @@ export default () => (
           </p>
         </Col>
         <Col lg={{ span: 3, offset: 1 }}>
-          {/* <Image src={repairing} fluid className={styles.aboutImg} />
-          <h3 className="big-subtitle">Visie</h3> */}
-          <div className="quote">
-            <img src={quotemark} className="open-mark" />
-            <p>Ik wil het verschil maken in IT diensten.</p>
-            <p>
-              Ik heb een passie voor ondernemen en IT en daar is Zentrex het
-              resultaat van!
-            </p>
-            <img src={quotemark} className="close-mark" />
-          </div>
+          <Image src={dennis} fluid className={styles.aboutImg} />
+          <Row>
+            <Col>
+              <div className="quote">
+                <img src={quotemark} className="open-mark" />
+                <p>Ik wil het verschil maken in IT diensten.</p>
+                <p>
+                  Ik heb een passie voor ondernemen en IT en daar is Zentrex het
+                  resultaat van!
+                </p>
+                <img src={quotemark} className="close-mark" />
+              </div>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </ScrollAnimation>
