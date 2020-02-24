@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa"
 
 import Link from "../components/link"
-import zentrexLogoBlack from "../assets/img/zentrex-logo-black.png"
+import zentrexLogoRed from "../assets/img/zentrex-logo-white.png"
 import styles from "./footer.module.scss"
 
 export default () => (
@@ -29,21 +29,12 @@ export default () => (
         </Link>
       </Col>
       <Col lg={2}>
-        <Image src={zentrexLogoBlack} fluid />
+        <Image src={zentrexLogoRed} fluid />
       </Col>
       <Col lg={4} className="text-lg-right">
         <p>Copyright &copy; {new Date().getFullYear()} Zentrex</p>
         <p>All rights reserved</p>
-      </Col>
-    </Row>
-    <Row className={styles.footerRow}>
-      <Col md={{ span: 10, offset: 1 }}>
-        <ul>
-          <li>info@zentrex.be</li>
-          <li>Sint-Huybrechtstraat 131 1785 Merchtem</li>
-          <li>+32 496 83 30 67</li>
-          <li>BE 0724 618 308</li>
-        </ul>
+        <p>BE 0724 618 308</p>
       </Col>
     </Row>
   </footer>
