@@ -21,6 +21,7 @@ import Layout from "../components/layout"
 import BannerImg from "../components/banner-img"
 import ReviewCard from "../components/review-card"
 import Footer from "../components/footer"
+import Link from "../components/link"
 
 import computerInsides from "../assets/img/computer-insides.jpg"
 import zentrexLogoWhite from "../assets/img/zentrex-logo-white.png"
@@ -85,63 +86,82 @@ export default () => (
       </BannerImg>
     </Row>
 
-    <Row id="diensten" className="pt-10 pb-7">
-      <Col md={{ span: 5, offset: 1 }}>
-        <ScrollAnimation
-          animateIn="fadeInUp"
-          animateOnce
-          offset={Math.floor(windowHeight * 0.1)}
-        >
-          <Image src={phoneRepair} fluid />
-        </ScrollAnimation>
-      </Col>
-      <Col md={5}>
-        <ScrollAnimation
-          animateIn="fadeInUp"
-          animateOnce
-          offset={Math.floor(windowHeight * 0.1)}
-        >
-          <h2 className="big-title">Diensten</h2>
-          <p className="big-text">
-            Voor bijna alle IT-gerelateerde zaken kan u bij Zentrex terecht.
-            Klanttevredenheid en kwaliteit staan centraal.
-          </p>
-        </ScrollAnimation>
-        <Row className="mt-4rem mb-5">
-          <Col>
-            <ScrollAnimation
-              animateIn="fadeInUp"
-              animateOnce
-              offset={Math.floor(windowHeight * 0.1)}
-            >
-              <h3 className="big-subtitle">Herstellingen</h3>
-              <ul className="nice-list">
-                <li>Smartphones, tablets, laptops, computers, ...</li>
-                <li>Hardware &amp; software problemen</li>
-                <li>In perfecte staat afgeleverd</li>
-                <li>Tot binnen 1 uur hersteld</li>
-                <li>Tot 24 maand garantie</li>
-              </ul>
-            </ScrollAnimation>
-          </Col>
-          <Col>
-            <ScrollAnimation
-              animateIn="fadeInUp"
-              animateOnce
-              offset={Math.floor(windowHeight * 0.1)}
-            >
-              <h3 className="big-subtitle">Computers op maat</h3>
-              <ul className="nice-list">
-                <li>Specifieke eisen voor computer</li>
-                <li>Niet zeker wat te kopen</li>
-                <li>Fanatieke gamer tot kantoorgebruik</li>
-                <li>Op maat samengesteld</li>
-              </ul>
-            </ScrollAnimation>
-          </Col>
-        </Row>
-      </Col>
-    </Row>
+    <div id="diensten" className="pt-10 pb-7">
+      <Row>
+        <Col md={{ span: 5, offset: 1 }}>
+          <ScrollAnimation
+            animateIn="fadeInUp"
+            animateOnce
+            offset={Math.floor(windowHeight * 0.1)}
+          >
+            <Image src={phoneRepair} fluid />
+          </ScrollAnimation>
+        </Col>
+        <Col md={5}>
+          <ScrollAnimation
+            animateIn="fadeInUp"
+            animateOnce
+            offset={Math.floor(windowHeight * 0.1)}
+          >
+            <h2 className="big-title">Diensten</h2>
+            <p className="big-text">
+              Voor bijna alle IT-gerelateerde zaken kan u bij Zentrex terecht.
+              Klanttevredenheid en kwaliteit staan centraal.
+            </p>
+          </ScrollAnimation>
+        </Col>
+      </Row>
+      <Row className="mt-4rem mb-5">
+        <Col md={{ span: 3, offset: 2 }}>
+          <ScrollAnimation
+            animateIn="fadeInUp"
+            animateOnce
+            offset={Math.floor(windowHeight * 0.1)}
+          >
+            <h3 className="big-subtitle">Herstellingen</h3>
+            <ul className="nice-list">
+              <li>Smartphones, tablets, laptops, computers, ...</li>
+              <li>Hardware &amp; software problemen</li>
+              <li>Trage computer oplossen</li>
+              <li>In perfecte staat afgeleverd</li>
+              <li>Tot binnen 1 uur hersteld</li>
+              <li>Tot 24 maand garantie</li>
+            </ul>
+          </ScrollAnimation>
+        </Col>
+        <Col md={{ span: 3 }}>
+          <ScrollAnimation
+            animateIn="fadeInUp"
+            animateOnce
+            offset={Math.floor(windowHeight * 0.1)}
+          >
+            <h3 className="big-subtitle">Computers op maat</h3>
+            <ul className="nice-list">
+              <li>Betrouwbaar &amp; performant</li>
+              <li>Specifieke eisen voor computer</li>
+              <li>Niet zeker wat te kopen</li>
+              <li>Fanatieke gamer tot kantoorgebruik</li>
+              <li>Op maat samengesteld</li>
+            </ul>
+          </ScrollAnimation>
+        </Col>
+        <Col md={{ span: 3 }}>
+          <ScrollAnimation
+            animateIn="fadeInUp"
+            animateOnce
+            offset={Math.floor(windowHeight * 0.1)}
+          >
+            <h3 className="big-subtitle">Netwerken</h3>
+            <ul className="nice-list">
+              <li>Op maat ontwerpen &amp; aanleggen</li>
+              <li>Bedraad &amp; draadloos</li>
+              <li>Slecht WiFi bereik oplossen</li>
+              <li>Sterk beveiligd</li>
+            </ul>
+          </ScrollAnimation>
+        </Col>
+      </Row>
+    </div>
 
     <Row id="reviews">
       <BannerImg
@@ -234,6 +254,10 @@ export default () => (
           <p className="big-text">
             Computers, laptops, smartphones en tablets hebben weinig geheimen
             meer voor mij.
+          </p>
+          <p className="big-text">
+            Meer weten over mij? Bekijk{" "}
+            <Link href="#">mijn LinkedIn profiel</Link>.
           </p>
         </Col>
         <Col lg={{ span: 3, offset: 1 }}>
