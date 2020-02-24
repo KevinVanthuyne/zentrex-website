@@ -27,11 +27,21 @@ h3 {
 .big-subtitle {
   letter-spacing: 1.5px;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .big-text {
   font-size: 1.5rem !important;
+}
+
+.big-icon-container {
+  text-align: center;
+}
+
+.big-icon {
+  font-size: 2em;
+  margin-right: 0.5em;
+  color: $red;
 }
 
 .quote {
