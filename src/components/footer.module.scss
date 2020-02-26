@@ -1,7 +1,11 @@
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
 @import "../styles/variables.scss";
 
 .footer {
   color: $slightly-dark-red;
+  text-align: center;
 
   .footerRow {
     background-color: $brown;
@@ -44,5 +48,37 @@
       display: inline;
       margin-right: 3rem;
     }
+  }
+
+  .footer-logo {
+    width: 80%;
+  }
+}
+
+// 562px and up
+@media (min-width: 450px) {
+  .footer-logo {
+    width: 60% !important;
+  }
+}
+
+// 720px and up
+@include media-breakpoint-up(sm) {
+  .footer-logo {
+    width: 40% !important;
+  }
+}
+
+// 960px and up
+@include media-breakpoint-up(md) {
+  .footer-logo {
+    width: 100% !important;
+  }
+}
+
+// 1240px and up
+@include media-breakpoint-up(lg) {
+  .footer {
+    text-align: inherit;
   }
 }

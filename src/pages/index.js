@@ -89,7 +89,7 @@ export default () => (
       </BannerImg>
     </Row>
 
-    <div id="diensten" className="pt-10 pb-7">
+    <div id="diensten" className="pt-10-md pb-5-md pt-4">
       <Row>
         <Col md={{ span: 5, offset: 1 }}>
           <ScrollAnimation
@@ -97,7 +97,11 @@ export default () => (
             animateOnce
             offset={Math.floor(windowHeight * 0.1)}
           >
-            <Image src={phoneRepair} fluid />
+            <Image
+              src={phoneRepair}
+              fluid
+              className="mb-5 mb-0-md big-image px-15vw-xs px-20vw-sm px-1vw-md px-2vw-lg px-4vw-xl"
+            />
           </ScrollAnimation>
         </Col>
         <Col md={5}>
@@ -114,7 +118,7 @@ export default () => (
           </ScrollAnimation>
         </Col>
       </Row>
-      <Row className="mt-4rem mb-5">
+      <Row className="mt-4rem">
         <Col md={{ span: 3, offset: 2 }}>
           <ScrollAnimation
             animateIn="fadeInUp"
@@ -125,7 +129,7 @@ export default () => (
               <FaTools className="big-icon" />
             </div>
             <h3 className="big-subtitle  text-center">Herstellingen</h3>
-            <ul className="nice-list">
+            <ul className="nice-list text-center text-left-md mb-5">
               <li>Smartphones, tablets, laptops, computers, ...</li>
               <li>Hardware &amp; software problemen</li>
               <li>Trage computer oplossen</li>
@@ -145,7 +149,7 @@ export default () => (
               <FaDesktop className="big-icon" />
             </div>
             <h3 className="big-subtitle text-center">Computers op maat</h3>
-            <ul className="nice-list">
+            <ul className="nice-list text-center text-left-md mb-5">
               <li>Betrouwbaar &amp; performant</li>
               <li>Specifieke eisen voor computer</li>
               <li>Niet zeker wat te kopen</li>
@@ -163,9 +167,9 @@ export default () => (
             <div className="big-icon-container mb-4">
               <FaWifi className="big-icon" />
             </div>
-            <h3 className="big-subtitle  text-center">Netwerken</h3>
-            <ul className="nice-list">
-              <li>Op maat ontwerpen &amp; aanleggen</li>
+            <h3 className="big-subtitle text-center">Netwerken</h3>
+            <ul className="nice-list text-center text-left-md mb-5">
+              <li>Op maat ontworpen &amp; aangelegd</li>
               <li>Bedraad &amp; draadloos</li>
               <li>Slecht WiFi bereik oplossen</li>
               <li>Sterk beveiligd</li>
@@ -256,8 +260,8 @@ export default () => (
       animateOnce
       offset={Math.floor(windowHeight * 0.1)}
     >
-      <Row id="over" className="pt-10 pb-7">
-        <Col lg={{ span: 6, offset: 1 }}>
+      <Row id="over" className="pb-5-md pt-7">
+        <Col lg={{ span: 6, offset: 1 }} className="mb-5">
           <h2 className="big-title">Over mij</h2>
           <p className="big-text">
             Ik ben Dennis Vanthuyne, een gemotiveerde student-ondernemer aan de
@@ -273,9 +277,15 @@ export default () => (
           </p>
         </Col>
         <Col lg={{ span: 3, offset: 1 }}>
-          <Image src={dennis} fluid className={styles.aboutImg} />
-          <Row>
-            <Col>
+          <Row className="mb-5">
+            <Col xs={12} md={6} lg={12}>
+              <Image
+                src={dennis}
+                fluid
+                className={`${styles.aboutImg} big-image px-15vw-xs px-20vw-sm px-10vw-md px-2vw-lg px-4vw-xl`}
+              />
+            </Col>
+            <Col xs={12} md={6} lg={12}>
               <div className="quote">
                 <img src={quotemark} className="open-mark" />
                 <p>Ik wil het verschil maken in IT diensten.</p>

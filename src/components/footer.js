@@ -14,7 +14,7 @@ import styles from "./footer.module.scss"
 export default () => (
   <footer className={styles.footer}>
     <Row className={styles.footerRow}>
-      <Col lg={{ span: 4, offset: 1 }} className={styles.footerIcons}>
+      <Col md={{ span: 4, offset: 1 }} className={`${styles.footerIcons} mb-4`}>
         <Link href="#">
           <FaGithub />
         </Link>
@@ -28,10 +28,10 @@ export default () => (
           <FaInstagram />
         </Link>
       </Col>
-      <Col lg={2}>
-        <Image src={zentrexLogoRed} fluid />
+      <Col md={2} className="mb-4">
+        <Image src={zentrexLogoRed} className={styles.footerLogo} fluid />
       </Col>
-      <Col lg={4} className="text-lg-right">
+      <Col md={4} className="text-lg-right">
         <p>Copyright &copy; {new Date().getFullYear()} Zentrex</p>
         <p>All rights reserved</p>
         <p>BE 0724 618 308</p>

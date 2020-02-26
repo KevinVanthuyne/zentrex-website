@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Questrial|Merriweather:300&display=swap");
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
 @import "../styles/variables.scss";
 
 html {
@@ -44,6 +47,10 @@ h3 {
   color: $red;
 }
 
+.big-image {
+  padding: 0 10vw !important;
+}
+
 .quote {
   color: $light-gray;
   font-size: 1.3em;
@@ -79,16 +86,12 @@ h3 {
   margin-bottom: 1em;
 }
 
-.pt-10 {
-  padding-top: 10rem;
+.pt-7 {
+  padding-top: 7rem;
 }
 
 .pt-15 {
   padding-top: 15rem;
-}
-
-.pb-7 {
-  padding-bottom: 7rem;
 }
 
 .pb-8 {
@@ -105,4 +108,59 @@ h3 {
 
 .mb-7 {
   margin-bottom: 7rem;
+}
+
+// 562px and up
+@media (min-width: 450px) {
+  .px-15vw-xs {
+    padding: 0 15vw !important;
+  }
+}
+
+// 720px and up
+@include media-breakpoint-up(sm) {
+  .px-20vw-sm {
+    padding: 0 20vw !important;
+  }
+}
+
+// 960px and up
+@include media-breakpoint-up(md) {
+  .px-1vw-md {
+    padding: 0 1vw !important;
+  }
+
+  .px-10vw-md {
+    padding: 0 10vw !important;
+  }
+
+  div.pt-10-md {
+    padding-top: 10rem !important;
+  }
+
+  .pb-5-md {
+    padding-bottom: 5rem;
+  }
+
+  .mb-0-md {
+    margin-bottom: 0;
+  }
+
+  ul.text-left-md {
+    text-align: left !important;
+  }
+}
+
+// 1240px and up
+@include media-breakpoint-up(lg) {
+  .px-2vw-lg {
+    padding: 0 2vw !important;
+  }
+}
+
+// 1500px and up
+@include media-breakpoint-up(xl) {
+  .px-4vw-xl {
+    padding: 0 4vw !important;
+  }
 }
