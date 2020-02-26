@@ -124,10 +124,7 @@ export default () => (
             <div className="big-icon-container mb-4">
               <FaTools className="big-icon" />
             </div>
-            <h3 className="big-subtitle">
-              {/* <FaTools className="big-icon" /> */}
-              Herstellingen
-            </h3>
+            <h3 className="big-subtitle  text-center">Herstellingen</h3>
             <ul className="nice-list">
               <li>Smartphones, tablets, laptops, computers, ...</li>
               <li>Hardware &amp; software problemen</li>
@@ -147,10 +144,7 @@ export default () => (
             <div className="big-icon-container mb-4">
               <FaDesktop className="big-icon" />
             </div>
-            <h3 className="big-subtitle">
-              {/* <FaDesktop className="big-icon" /> */}
-              Computers op maat
-            </h3>
+            <h3 className="big-subtitle text-center">Computers op maat</h3>
             <ul className="nice-list">
               <li>Betrouwbaar &amp; performant</li>
               <li>Specifieke eisen voor computer</li>
@@ -169,10 +163,7 @@ export default () => (
             <div className="big-icon-container mb-4">
               <FaWifi className="big-icon" />
             </div>
-            <h3 className="big-subtitle">
-              {/* <FaWifi className="big-icon" /> */}
-              Netwerken
-            </h3>
+            <h3 className="big-subtitle  text-center">Netwerken</h3>
             <ul className="nice-list">
               <li>Op maat ontwerpen &amp; aanleggen</li>
               <li>Bedraad &amp; draadloos</li>
