@@ -27,10 +27,8 @@ import Link from "../components/link"
 
 import computerInsides from "../assets/img/computer-insides.jpg"
 import zentrexLogoWhite from "../assets/img/zentrex-logo-white.png"
-import zentrexLogoBlack from "../assets/img/zentrex-logo-black.png"
 import circuitBoard from "../assets/img/circuit-board.jpg"
 import phoneRepair from "../assets/img/broken-phone.jpg"
-import repairing from "../assets/img/repairing.jpg"
 import dennis from "../assets/img/dennis.jpg"
 import quotemark from "../assets/img/quotemark.svg"
 
@@ -287,13 +285,13 @@ export default () => (
             </Col>
             <Col xs={12} md={6} lg={12}>
               <div className="quote">
-                <img src={quotemark} className="open-mark" />
+                <img src={quotemark} className="open-mark" alt="" />
                 <p>Ik wil het verschil maken in IT diensten.</p>
                 <p>
                   Ik heb een passie voor ondernemen en IT en daar is Zentrex het
                   resultaat van!
                 </p>
-                <img src={quotemark} className="close-mark" />
+                <img src={quotemark} className="close-mark" alt="" />
               </div>
             </Col>
           </Row>
@@ -338,6 +336,7 @@ export default () => (
           height="100%"
           frameborder="0"
           allowfullscreen
+          title="Location of Zentrex on Google Maps"
         ></iframe>
       </Col>
     </Row>
