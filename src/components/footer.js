@@ -15,17 +15,11 @@ export default () => (
   <footer className={styles.footer}>
     <Row className={styles.footerRow}>
       <Col md={{ span: 4, offset: 1 }} className={`${styles.footerIcons} mb-4`}>
-        <Link href="#">
-          <FaGithub />
-        </Link>
-        <Link href="#">
+        <Link href="https://www.linkedin.com/in/dennisvanthuyne/">
           <FaLinkedinIn />
         </Link>
-        <Link href="#">
+        <Link href="https://www.facebook.com/ZentrexIT">
           <FaFacebookF />
-        </Link>
-        <Link href="#">
-          <FaInstagram />
         </Link>
       </Col>
       <Col md={2} className="mb-4">

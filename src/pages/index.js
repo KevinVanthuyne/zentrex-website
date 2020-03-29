@@ -87,7 +87,7 @@ export default () => (
       </BannerImg>
     </Row>
 
-    <div id="diensten" className="pt-10-md pb-5-md pt-4">
+    <div id="diensten" className="px-2 pt-10-md pb-5-md pt-4">
       <Row>
         <Col md={{ span: 5, offset: 1 }}>
           <ScrollAnimation
@@ -131,7 +131,7 @@ export default () => (
               <li>Smartphones, tablets, laptops, computers, ...</li>
               <li>Hardware &amp; software problemen</li>
               <li>Trage computer oplossen</li>
-              <li>In perfecte staat afgeleverd</li>
+              <li>Virussen verwijderen</li>
               <li>Tot binnen 1 uur hersteld</li>
               <li>Tot 24 maand garantie</li>
             </ul>
@@ -150,7 +150,7 @@ export default () => (
             <ul className="nice-list text-center text-left-md mb-5">
               <li>Betrouwbaar &amp; performant</li>
               <li>Specifieke eisen voor computer</li>
-              <li>Niet zeker wat te kopen</li>
+              <li>Aankoopadvies</li>
               <li>Fanatieke gamer tot kantoorgebruik</li>
               <li>Op maat samengesteld</li>
             </ul>
@@ -258,7 +258,7 @@ export default () => (
       animateOnce
       offset={Math.floor(windowHeight * 0.1)}
     >
-      <Row id="over" className="pb-5-md pt-7">
+      <Row id="over" className="px-2 pb-5-md pt-7">
         <Col lg={{ span: 6, offset: 1 }} className="mb-5">
           <h2 className="big-title">Over mij</h2>
           <p className="big-text">
@@ -271,7 +271,10 @@ export default () => (
           </p>
           <p className="big-text">
             Meer weten over mij? Bekijk{" "}
-            <Link href="#">mijn LinkedIn profiel</Link>.
+            <Link href="https://www.linkedin.com/in/dennisvanthuyne/">
+              mijn LinkedIn profiel
+            </Link>
+            .
           </p>
         </Col>
         <Col lg={{ span: 3, offset: 1 }}>
@@ -299,7 +302,7 @@ export default () => (
       </Row>
     </ScrollAnimation>
 
-    <Row id="contact" className={`${styles.contactSection} pt-15 pb-8`}>
+    <Row id="contact" className={`${styles.contactSection} px-2 pt-15 pb-8`}>
       <Col md={{ span: 5, offset: 1 }}>
         <ScrollAnimation
           animateIn="fadeInUp"
@@ -329,7 +332,7 @@ export default () => (
           </ul>
         </ScrollAnimation>
       </Col>
-      <Col md={5}>
+      <Col md={5} className={`${styles.map} mt-5 mt-md-0`}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.005375163039!2d4.209476816304175!3d50.979091257012435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c395f76824e52b%3A0x211c7f71410dce6c!2sZentrex!5e0!3m2!1snl!2sbe!4v1579169861160!5m2!1snl!2sbe"
           width="100%"

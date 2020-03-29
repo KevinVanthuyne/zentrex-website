@@ -25,6 +25,7 @@ h3 {
   font-weight: bold;
   font-size: 4rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .big-subtitle {
@@ -34,7 +35,7 @@ h3 {
 }
 
 .big-text {
-  font-size: 1.5rem !important;
+  font-size: 1.4rem !important;
 }
 
 .big-icon-container {
@@ -142,12 +143,24 @@ h3 {
     padding-bottom: 5rem;
   }
 
+  .mt-0-md {
+    margin-top: 0;
+  }
+
   .mb-0-md {
     margin-bottom: 0;
   }
 
   ul.text-left-md {
     text-align: left !important;
+  }
+
+  .big-title {
+    text-align: left;
+  }
+
+  .big-text {
+    font-size: 1.5rem !important;
   }
 }
 
