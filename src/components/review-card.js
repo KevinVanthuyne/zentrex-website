@@ -1,12 +1,12 @@
-import React from "react"
-import { IconContext } from "react-icons"
-import { FaStar, FaAngleRight } from "react-icons/fa"
-import { Row, Col, Image } from "react-bootstrap"
+import React from "react";
+import { IconContext } from "react-icons";
+import { FaStar, FaAngleRight } from "react-icons/fa";
+import { Row, Col, Image } from "react-bootstrap";
 
-import styles from "./review-card.module.scss"
+import styles from "./review-card.module.scss";
 
-import userIcon from "../assets/img/user.svg"
-import Link from "../components/link"
+import userIcon from "../assets/img/user.svg";
+import Link from "../components/link";
 
 export default props => (
   <div className={styles.card}>
@@ -49,4 +49,4 @@ export default props => (
       </Row>
     </Link>
   </div>
-)
+);

@@ -1,15 +1,10 @@
-import React from "react"
-import { Row, Col, Image } from "react-bootstrap"
-import {
-  FaInstagram,
-  FaFacebookF,
-  FaGithub,
-  FaLinkedinIn,
-} from "react-icons/fa"
+import React from "react";
+import { Row, Col, Image } from "react-bootstrap";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
-import Link from "../components/link"
-import zentrexLogoRed from "../assets/img/zentrex-logo-white.png"
-import styles from "./footer.module.scss"
+import Link from "../components/link";
+import zentrexLogoRed from "../assets/img/zentrex-logo-white.png";
+import styles from "./footer.module.scss";
 
 export default () => (
   <footer className={styles.footer}>
@@ -32,4 +27,4 @@ export default () => (
       </Col>
     </Row>
   </footer>
-)
+);

@@ -1,7 +1,7 @@
-import React from "react"
-import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax"
+import React from "react";
+import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
 
-import styles from "./banner-img.module.scss"
+import styles from "./banner-img.module.scss";
 
 export default props => (
   <ParallaxProvider>
@@ -25,4 +25,4 @@ export default props => (
       {props.children}
     </ParallaxBanner>
   </ParallaxProvider>
-)
+);

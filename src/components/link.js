@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import styles from "./link.module.scss"
+import styles from "./link.module.scss";
 
 export default props => (
   <a
@@ -11,4 +11,4 @@ export default props => (
   >
     {props.children}
   </a>
-)
+);

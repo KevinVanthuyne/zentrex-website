@@ -1,3 +1,6 @@
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
 @import "../styles/variables.scss";
 
 @keyframes strike {
@@ -9,20 +12,34 @@
   }
 }
 
+.is-open {
+  background-color: $black-transparant-darker;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
 .navbar {
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 0.15em;
   z-index: 999;
-  mix-blend-mode: difference;
+  padding: 0;
+
+  .navbar-toggle {
+    margin: 0.5rem 1rem;
+    background-color: $black-transparant;
+  }
 
   .nav {
-    margin-left: auto;
+    margin-left: 0;
+
+    width: 100vw;
+    height: 100vh;
 
     a {
-      margin-left: 2.5em;
-      position: relative;
+      text-align: center;
+      margin: 0.5em;
     }
 
     a:hover::after {
@@ -45,4 +62,25 @@
 .navbar span,
 .nav a {
   color: white !important;
+}
+
+// 960px and up
+@include media-breakpoint-up(md) {
+  .navbar {
+    mix-blend-mode: difference;
+    padding: 0.5rem 1rem;
+    margin-left: 2.5em;
+    font-size: 0.9rem;
+
+    .nav {
+      margin-left: auto;
+      width: auto;
+      height: auto;
+
+      a {
+        margin-left: 2.5em;
+        position: relative;
+      }
+    }
+  }
 }
