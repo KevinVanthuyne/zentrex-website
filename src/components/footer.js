@@ -18,7 +18,12 @@ export default () => (
         </Link>
       </Col>
       <Col md={2} className="mb-4">
-        <Image src={zentrexLogoRed} className={styles.footerLogo} fluid />
+        <Image
+          src={zentrexLogoRed}
+          className={styles.footerLogo}
+          fluid
+          alt="Zentrex logo"
+        />
       </Col>
       <Col md={4} className="text-lg-right">
         <p>Copyright &copy; {new Date().getFullYear()} Zentrex</p>

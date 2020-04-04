@@ -13,7 +13,7 @@ export default props => (
     <Link href="https://search.google.com/local/reviews?placeid=ChIJK-UkaPeVw0cRbM4NQXF_HCE">
       <Row>
         <Col md={3} lg={2} className={styles.cardImgContainer}>
-          <Image src={userIcon} fluid className={styles.cardImg} />
+          <Image src={userIcon} fluid className={styles.cardImg} alt="" />
         </Col>
         <Col md={9} lg={10} className={styles.cardBody}>
           <div className={styles.cardTitle}>{props.reviewer}</div>
