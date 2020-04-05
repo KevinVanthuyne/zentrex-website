@@ -12,9 +12,11 @@ export default () => (
       <Col md={{ span: 4, offset: 1 }} className={`${styles.footerIcons} mb-4`}>
         <Link href="https://www.linkedin.com/in/dennisvanthuyne/">
           <FaLinkedinIn />
+          <p className="d-none">Dennis Vanthuyne's LinkedIn profiel</p>
         </Link>
         <Link href="https://www.facebook.com/ZentrexIT">
           <FaFacebookF />
+          <p className="d-none">Zentrex Facebook pagina</p>
         </Link>
       </Col>
       <Col md={2} className="mb-4">
