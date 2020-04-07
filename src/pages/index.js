@@ -134,7 +134,7 @@ export default () => (
               <ul className="nice-list text-center text-left-md mb-5">
                 <li>Smartphones, tablets, laptops, computers, ...</li>
                 <li>Hardware &amp; software problemen</li>
-                <li>Trage computer oplossen</li>
+                <li>Trage computer versnellen</li>
                 <li>Virussen verwijderen</li>
                 <li>Tot binnen 1 uur hersteld</li>
                 <li>Tot 24 maand garantie</li>
