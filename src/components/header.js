@@ -3,8 +3,6 @@ import { Navbar, Nav } from "react-bootstrap";
 
 import styles from "./header.module.scss";
 
-let isToggled = true;
-
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -46,9 +44,4 @@ export default class Header extends React.Component {
       </header>
     );
   }
-}
-
-function toggled() {
-  isToggled = !isToggled;
-  console.log("Toggled baby");
 }
