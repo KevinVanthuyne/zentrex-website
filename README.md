@@ -4,7 +4,9 @@ Company website for Zentrex using Gatsby.
 
 ## Run
 
-Make sure Node.js is installed and run `gatsby develop` to start the development server. The site is now running at `http://localhost:8000`
+- Make sure Node.js and npm are installed
+- Run `npm install` in the root folder to install all packages
+- Run `gatsby develop` to start the development server. The site is now running at `http://localhost:8000`
 
 ## Export static site for deployment
 
