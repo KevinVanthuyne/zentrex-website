@@ -30,7 +30,7 @@ export default () => (
       <Col md={4} className="text-lg-right">
         <p>Copyright &copy; {new Date().getFullYear()} Zentrex</p>
         <p>All rights reserved</p>
-        <p>BE 0724 618 308</p>
+        <p>BE 0790 246 033</p>
       </Col>
     </Row>
   </footer>
