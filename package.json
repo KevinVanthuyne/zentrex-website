@@ -16,7 +16,7 @@
     "animate.css": "^3.7.2",
     "babel-plugin-styled-components": "^1.10.6",
     "bootstrap": "^4.4.1",
-    "gatsby": "^2.18.12",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sass": "^2.1.27",
